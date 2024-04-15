@@ -16,6 +16,21 @@ btnEnviar .addEventListener("click", (e) => {
     apellidoV = apellido.value;
     edadV = edad.value;
 
+    if(nombreV === ""){
+        alert("Falta Nombre")
+        return;
+    };
+
+    if(apellidoV === ""){
+        alert("Falta Apellido")
+        return;
+    };
+
+    if(edadV === ""){
+        alert("Falta Edad")
+        return;
+    };
+
     console.log("Nombre " +nombreV+ " Apellido " +apellidoV+ " Edad "+edadV);
 
 });
